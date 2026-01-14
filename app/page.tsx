@@ -26,6 +26,11 @@ export default function Home() {
           <h2>💡 Examples</h2>
           <p>Practical examples and code snippets to learn from</p>
         </Link>
+        
+        <Link href="/documents" className="card">
+          <h2>📁 Spark Documents</h2>
+          <p>Browse Spark project files including presentations, spreadsheets, and documentation</p>
+        </Link>
       </div>
     </div>
   )

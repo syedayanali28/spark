@@ -17,6 +17,42 @@ A simple and elegant Next.js application showcasing documentation across differe
 - **Installation** (`/docs/installation`) - Detailed installation guide
 - **API Reference** (`/docs/api-reference`) - Complete API documentation
 - **Examples** (`/docs/examples`) - Practical code examples
+- **Documents** (`/documents`) - Browse and view Spark project files
+
+## Document Viewers
+
+The app includes specialized viewers for different file types:
+
+### 📝 Markdown Viewer
+- View `.md` files with formatted rendering
+- Supports headings, lists, code blocks, and more
+- Route: `/documents/markdown/[filename]`
+
+### 📊 Excel Viewer
+- View `.xlsx` and `.xls` files directly in the browser
+- Switch between multiple sheets with tab navigation
+- Displays spreadsheet data in a formatted table
+- Option to download original files
+- Route: `/documents/excel/[filename]`
+
+### 📽️ PowerPoint Files
+- PowerPoint presentations (`.pptx`) are available for download
+- Files are stored in the `public` folder for easy access
+
+## Spark Project Files
+
+All Spark-related documents have been organized in the `/public` folder:
+
+- **Markdown**: `base_knowledge.md`
+- **Excel Files**: 
+  - Digital Policy Office AI Application Impact Assessment
+  - Metadata Template
+- **PowerPoint Presentations**:
+  - Spark ARB v1.1 with comments
+  - SPARK AS2 Showcase
+  - Spark Data Governance Review Template
+  - SPARK Roadshow App Team
+  - Sprint 3_B
 
 ## Getting Started
 
@@ -62,21 +98,36 @@ npm start
 │   │   │   └── page.tsx
 │   │   └── examples/
 │   │       └── page.tsx
+│   ├── documents/
+│   │   ├── markdown/
+│   │   │   └── [filename]/
+│   │   │       └── page.tsx
+│   │   ├── excel/
+│   │   │   └── [filename]/
+│   │   │       └── page.tsx
+│   │   └── page.tsx
 │   ├── layout.tsx
 │   ├── page.tsx
 │   └── globals.css
 ├── components/
 │   └── Navigation.tsx
+├── public/
+│   ├── base_knowledge.md
+│   ├── *.xlsx (Excel files)
+│   └── *.pptx (PowerPoint files)
 ├── package.json
 └── README.md
 ```
 
 ## Technologies Used
 
-- Next.js 14
+- Next.js 14 (App Router)
 - React 18
 - TypeScript
 - CSS3
+- react-markdown (Markdown rendering)
+- xlsx (Excel file parsing)
+- File System API (Server-side file reading)
 
 ## License
 
