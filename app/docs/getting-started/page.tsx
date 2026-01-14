@@ -6,8 +6,8 @@ export default function GettingStarted() {
       <h2>Introduction</h2>
       <p>
         Welcome to our documentation! This guide will help you get started with our platform 
-        in just a few minutes. Whether you're a beginner or an experienced developer, 
-        you'll find everything you need to know right here.
+        in just a few minutes. Whether you&apos;re a beginner or an experienced developer, 
+        you&apos;ll find everything you need to know right here.
       </p>
 
       <h2>Prerequisites</h2>
@@ -34,9 +34,9 @@ export default function GettingStarted() {
 cd my-app
 npm run dev</code></pre>
 
-      <h2>What's Next?</h2>
+      <h2>What&apos;s Next?</h2>
       <p>
-        Now that you've got your project set up, you can:
+        Now that you&apos;ve got your project set up, you can:
       </p>
       <ul>
         <li>Check out the <a href="/docs/installation" style={{color: '#3498db'}}>Installation Guide</a> for detailed setup instructions</li>
